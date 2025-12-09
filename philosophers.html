@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Философы — Философия великих людей</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Φιλοσοφία</a>
+            <input type="checkbox" id="burger" class="burger">
+            <label for="burger" class="burger-label"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+            <label for="burger" class="mobile-nav-overlay"></label>
+            <nav class="mobile-nav">
+                <label for="burger" class="close-btn">×</label>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <div class="content-container">
+            <section class="hero">
+                <h1>Великие философы</h1>
+                <p>Портреты мыслителей, чьи идеи сформировали ход истории и основы современного мышления.</p>
+            </section>
+
+            <section class="search-section">
+                <input type="text" id="philosopher-search" placeholder="Найдите философа по имени...">
+            </section>
+
+            <section class="philosophers-grid" id="philosophers-grid">
+                
+            </section>
+
+            <div class="show-more-container">
+                <button id="show-more-btn" class="show-more-btn">Показать всех философов</button>
+                <button id="show-less-btn" class="show-less-btn">Скрыть всех</button>
+            </div>
+        </div>
+
+        <div class="sticky-sidebar">
+            <h2>Эпохи мышления</h2>
+            <ul class="epochs-list">
+                <li class="epoch-item" data-epoch="ancient">
+                    Античная философия
+                    <ul class="epoch-philosophers">
+                        <li><a href="#" data-modal="socrates">Сократ</a></li>
+                        <li><a href="#" data-modal="plato">Платон</a></li>
+                        <li><a href="#" data-modal="aristotle">Аристотель</a></li>
+                        <li><a href="#" data-modal="epicurus">Эпикур</a></li>
+                        <li><a href="#" data-modal="seneca">Сенека</a></li>
+                    </ul>
+                </li>
+                <li class="epoch-item" data-epoch="medieval">
+                    Средневековье
+                    <ul class="epoch-philosophers">
+                        <li><a href="#" data-modal="augustine">Августин</a></li>
+                        <li><a href="#" data-modal="aquinas">Фома Аквинский</a></li>
+                        <li><a href="#" data-modal="anselm">Ансельм</a></li>
+                    </ul>
+                </li>
+                <li class="epoch-item" data-epoch="renaissance">
+                    Эпоха Возрождения
+                    <ul class="epoch-philosophers">
+                        <li><a href="#" data-modal="erasmus">Эразм Роттердамский</a></li>
+                        <li><a href="#" data-modal="more">Томас Мор</a></li>
+                        <li><a href="#" data-modal="bruno">Джордано Бруно</a></li>
+                    </ul>
+                </li>
+                <li class="epoch-item" data-epoch="modern">
+                    Новое время
+                    <ul class="epoch-philosophers">
+                        <li><a href="#" data-modal="descartes">Рене Декарт</a></li>
+                        <li><a href="#" data-modal="spinoza">Бенедикт Спиноза</a></li>
+                        <li><a href="#" data-modal="locke">Джон Локк</a></li>
+                        <li><a href="#" data-modal="kant">Иммануил Кант</a></li>
+                        <li><a href="#" data-modal="hume">Дэвид Юм</a></li>
+                    </ul>
+                </li>
+                <li class="epoch-item" data-epoch="contemporary">
+                    Современная философия
+                    <ul class="epoch-philosophers">
+                        <li><a href="#" data-modal="schopenhauer">Артур Шопенгауэр</a></li>
+                        <li><a href="#" data-modal="nietzsche">Фридрих Ницше</a></li>
+                        <li><a href="#" data-modal="marx">Карл Маркс</a></li>
+                        <li><a href="#" data-modal="wittgenstein">Людвиг Витгенштейн</a></li>
+                        <li><a href="#" data-modal="sartre">Жан-Поль Сартр</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Ключевые труды</h2>
+            <ul class="works-shortcuts">
+                <li><a href="#" data-works="socrates">Апология Сократа</a></li>
+                <li><a href="#" data-works="plato">Государство</a></li>
+                <li><a href="#" data-works="aristotle">Никомахова этика</a></li>
+                <li><a href="#" data-works="descartes">Размышления</a></li>
+                <li><a href="#" data-works="kant">Критика чистого разума</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Философия великих людей.</p>
+        <div class="social-links">
+            <a href="#" class="social-btn" aria-label="ВКонтакте">VK</a>
+            <a href="#" class="social-btn" aria-label="Telegram">TG</a>
+            <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="works-modal" class="modal-overlay">
+        <div class="modal-content works-modal-content">
+            <span class="modal-close works-close">&times;</span>
+            <h2 id="works-title">Ключевые труды</h2>
+            <div id="works-list"></div>
+        </div>
+    </div>
+
+    <div id="book-modal" class="modal-overlay">
+        <div class="modal-content book-modal-content">
+            <span class="modal-close book-close">&times;</span>
+            <div id="book-content"></div>
+        </div>
+    </div>
+
+    <script src="js/philosophers.js"></script>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>

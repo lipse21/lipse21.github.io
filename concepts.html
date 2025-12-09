@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Философские понятия — Философия великих людей</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Φιλοσοφία</a>
+            <input type="checkbox" id="burger" class="burger">
+            <label for="burger" class="burger-label"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+            <label for="burger" class="mobile-nav-overlay"></label>
+            <nav class="mobile-nav">
+                <label for="burger" class="close-btn">×</label>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <div class="content-container">
+            <section class="hero">
+                <h1>Философские понятия</h1>
+                <p>Исследуйте ключевые идеи через призму вечных противоположностей.</p>
+            </section>
+
+            
+            <section class="concept-categories">
+                <h2>Философские понятия</h2>
+                <div class="category-grid">
+                    <button class="category-btn" data-category="being">Бытие и реальность</button>
+                    <button class="category-btn" data-category="knowledge">Познание</button>
+                    <button class="category-btn" data-category="human">Человек</button>
+                    <button class="category-btn" data-category="values">Ценности</button>
+                    <button class="category-btn" data-category="language">Язык и смысл</button>
+                    <button class="category-btn" data-category="other">Прочее</button>
+                </div>
+            </section>
+
+            
+            <section class="opposites-game">
+                <h2>Закрепите материал: найдите пары</h2>
+                <div class="game-instructions">
+                    <p>Перетащите каждое понятие к его философской противоположности.</p>
+                </div>
+                <div class="game-area">
+                    <div class="concepts-source">
+                        <h3>Понятия</h3>
+                        <div class="draggable-item" data-concept="rationalism">Рационализм</div>
+                        <div class="draggable-item" data-concept="individualism">Индивидуализм</div>
+                        <div class="draggable-item" data-concept="libertarianism">Свобода воли</div>
+                        <div class="draggable-item" data-concept="idealism">Идеализм</div>
+                    </div>
+                    <div class="concepts-target">
+                        <h3>Противоположности</h3>
+                        <div class="drop-zone" data-accepts="rationalism">Иррационализм</div>
+                        <div class="drop-zone" data-accepts="individualism">Коллективизм</div>
+                        <div class="drop-zone" data-accepts="libertarianism">Детерминизм</div>
+                        <div class="drop-zone" data-accepts="idealism">Материализм</div>
+                    </div>
+                </div>
+                <div class="game-feedback" id="game-feedback"></div>
+            </section>
+        </div>
+
+        <div class="sticky-sidebar">
+            <h2>Основные дилеммы</h2>
+            <ul>
+                <li>Человек — разумен или влечением управляем?</li>
+                <li>Свобода воли — иллюзия или реальность?</li>
+                <li>Есть ли объективная истина?</li>
+                <li>Человек — часть общества или автономная личность?</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Философия великих людей.</p>
+        <div class="social-links">
+            <a href="#" class="social-btn" aria-label="ВКонтакте">VK</a>
+            <a href="#" class="social-btn" aria-label="Telegram">TG</a>
+            <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+        </div>
+    </footer>
+
+    <div id="concept-modal" class="modal-overlay">
+        <div class="modal-content concept-modal-content">
+            <span class="modal-close concept-modal-close">&times;</span>
+            <div id="concept-modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/concepts.js"></script>
+    <script src="js/compass.js"></script>
+</body>
+</html>

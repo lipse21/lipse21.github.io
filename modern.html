@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Философия сегодня — Философия великих людей</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.2);
+            --glass-border: rgba(255, 255, 255, 0.3);
+            --blur: 12px;
+        }
+
+        .practice-section {
+            margin: 30px 0;
+        }
+
+            .practice-section h2 {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #2c3e50;
+                font-family: 'Playfair Display', serif;
+            }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        
+        .card-4 {
+            width: 260px;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            text-align: center;
+            padding: 25px;
+            position: relative;
+        }
+
+        .cards-4:hover .card-4:not(:hover) {
+            filter: blur(2px) opacity(0.65);
+            transform: scale(0.96);
+        }
+
+        .card-4:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        
+        .card-5 {
+            width: 260px;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            transition: all 0.4s ease;
+            text-align: center;
+            padding: 25px;
+            position: relative;
+        }
+
+            .card-5::before {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: linear-gradient(45deg, #e74c3c, #3498db, #2ecc71, #e74c3c);
+                background-size: 400% 400%;
+                border-radius: 18px;
+                z-index: -1;
+                opacity: 0;
+                transition: opacity 0.4s ease;
+            }
+
+            .card-5:hover::before {
+                opacity: 1;
+                animation: shine 3s ease infinite;
+            }
+
+        .cards-5:hover .card-5:not(:hover) {
+            filter: grayscale(90%) brightness(0.8) opacity(0.7);
+            transform: scale(0.96);
+        }
+
+        .card-5:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .card-4 img,
+        .card-5 img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 2px solid #e74c3c;
+        }
+
+        .card-4 h3,
+        .card-5 h3 {
+            margin-bottom: 12px;
+            color: #2c3e50;
+            font-size: 22px;
+        }
+
+        .card-4 p,
+        .card-5 p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card-4, .card-5 {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Φιλοσοφία</a>
+            <input type="checkbox" id="burger" class="burger">
+            <label for="burger" class="burger-label"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+            <label for="burger" class="mobile-nav-overlay"></label>
+            <nav class="mobile-nav">
+                <label for="burger" class="close-btn">×</label>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <div class="content-container">
+            <section class="hero">
+                <h1>Философия сегодня</h1>
+                <p>Практика современного мышления через интерактивные карточки.</p>
+            </section>
+
+            
+            <section class="practice-section">
+                <h2>Философы существования и власти</h2>
+                <div class="cards-container cards-4">
+                    <div class="card-4">
+                        <img src="img/sartre.jpg" alt="Сартр">
+                        <h3>Жан-Поль Сартр</h3>
+                        <p>«Существование предшествует сущности». Основатель экзистенциализма.</p>
+                    </div>
+                    <div class="card-4">
+                        <img src="img/arendt.jpg" alt="Арендт">
+                        <h3>Ханна Арендт</h3>
+                        <p>Анализ тоталитаризма и концепция «банальности зла».</p>
+                    </div>
+                    <div class="card-4">
+                        <img src="img/foucault.jpg" alt="Фуко">
+                        <h3>Мишель Фуко</h3>
+                        <p>Власть, дискурс и биополитика в современном обществе.</p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="practice-section">
+                <h2>Философы фундаментальных рамок</h2>
+                <div class="cards-container cards-5">
+                    <div class="card-5">
+                        <img src="img/heidegger.jpg" alt="Хайдеггер">
+                        <h3>Мартин Хайдеггер</h3>
+                        <p>«Бытие и время» — анализ экзистенциальной структуры Dasein.</p>
+                    </div>
+                    <div class="card-5">
+                        <img src="img/kuhn.jpg" alt="Кун">
+                        <h3>Томас Кун</h3>
+                        <p>Наука развивается через парадигмальные сдвиги, а не накопление.</p>
+                    </div>
+                    <div class="card-5">
+                        <img src="img/rawlz.jpg" alt="Ролз">
+                        <h3>Джон Ролз</h3>
+                        <p>«Справедливость как честная игра» за завесой неведения.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="sticky-sidebar">
+            <h2>Современные мыслители</h2>
+            <ul>
+                <li>Сартр (1905–1980)</li>
+                <li>Арендт (1906–1975)</li>
+                <li>Фуко (1926–1984)</li>
+                <li>Хайдеггер (1889–1976)</li>
+                <li>Кун (1922–1996)</li>
+                <li>Ролз (1921–2002)</li>
+            </ul>
+            <p style="margin-top: 20px; font-style: italic;">
+                «Философия — это не утешение, а вызов»<br>— Ханна Арендт
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Философия великих людей.</p>
+    </footer>
+</body>
+</html>

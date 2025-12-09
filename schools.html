@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Философские школы — Философия великих людей</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Φιλοσοφία</a>
+            <input type="checkbox" id="burger" class="burger">
+            <label for="burger" class="burger-label"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+            <label for="burger" class="mobile-nav-overlay"></label>
+            <nav class="mobile-nav">
+                <label for="burger" class="close-btn">×</label>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <div class="content-container">
+            <section class="hero">
+                <h1>Философские школы по эпохам</h1>
+                <p>Проведите ползунок, чтобы исследовать философские течения разных эпох.</p>
+            </section>
+
+            <section class="epoch-preview" id="epoch-preview">
+                <div class="preview-inner" id="preview-content">
+                    
+                </div>
+            </section>
+
+            <section class="epoch-slider-section">
+                <div class="epoch-rail-container">
+                    <div class="epoch-rail" id="epoch-rail">
+                        <div class="epoch-handle" id="epoch-handle"></div>
+                        <div class="epoch-zone" data-epoch="antiquity" style="left: 0%; width: 20%;"></div>
+                        <div class="epoch-zone" data-epoch="medieval" style="left: 20%; width: 20%;"></div>
+                        <div class="epoch-zone" data-epoch="renaissance" style="left: 40%; width: 20%;"></div>
+                        <div class="epoch-zone" data-epoch="modern" style="left: 60%; width: 20%;"></div>
+                        <div class="epoch-zone" data-epoch="contemporary" style="left: 80%; width: 20%;"></div>
+                    </div>
+                    <div class="epoch-labels">
+                        <span>Античность</span>
+                        <span>Средневековье</span>
+                        <span>Возрождение</span>
+                        <span>XVII–XVIII вв.</span>
+                        <span>XX век</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="sticky-sidebar">
+            <h2>Эпохи мышления</h2>
+            <ul>
+                <li>Античная философия</li>
+                <li>Христианская философия</li>
+                <li>Гуманизм</li>
+                <li>Просвещение</li>
+                <li>Экзистенциализм и постмодерн</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Философия великих людей.</p>
+        <div class="social-links">
+            <a href="#" class="social-btn" aria-label="ВКонтакте">VK</a>
+            <a href="#" class="social-btn" aria-label="Telegram">TG</a>
+            <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+        </div>
+    </footer>
+
+    <div id="school-modal" class="modal-overlay">
+        <div class="modal-content school-modal-content">
+            <span class="modal-close school-modal-close">&times;</span>
+            <div id="school-modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/schools.js"></script>
+</body>
+</html>

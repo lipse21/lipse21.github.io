@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Философия великих людей</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Φιλοσοφία</a>
+            <input type="checkbox" id="burger" class="burger">
+            <label for="burger" class="burger-label"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+            <label for="burger" class="mobile-nav-overlay"></label>
+            <nav class="mobile-nav">
+                <label for="burger" class="close-btn">×</label>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <div class="content-container">
+            <section id="home" class="hero">
+                <h1>Философия великих людей</h1>
+                <p>Исследуйте мудрость веков через учения великих философов, чьи идеи изменили мир и продолжают влиять на наше мышление сегодня.</p>
+            </section>
+
+            <section id="philosophers">
+                <div class="content-blocks">
+                    <div class="block">
+                        <div class="philosopher-img">Σ</div>
+                        <h2>Сократ</h2>
+                        <p>Древнегреческий философ, чьи идеи заложили основы западной философии. Известен своим методом диалога и принципом "Познай самого себя".</p>
+                        <div class="quote">"Я знаю, что ничего не знаю"</div>
+                        <p class="author">- Сократ</p>
+                    </div>
+                    <div class="block">
+                        <div class="philosopher-img">Π</div>
+                        <h2>Платон</h2>
+                        <p>Ученик Сократа и учитель Аристотеля. Основатель Академии в Афинах. Разработал теорию идей, согласно которой материальный мир является лишь отражением мира идеальных форм.</p>
+                        <div class="quote">"Мы можем легко простить ребенка, который боится темноты; настоящая трагедия жизни - когда взрослые боятся света"</div>
+                        <p class="author">- Платон</p>
+                    </div>
+                    <div class="block">
+                        <div class="philosopher-img">A</div>
+                        <h2>Аристотель</h2>
+                        <p>Ученик Платона, основатель лицея в Афинах. Его работы охватывают множество предметов, включая физику, биологию, метафизику, логику, этику, эстетику, поэзию, театр, музыку, риторику, психологию, лингвистику, экономику, политику и правительство.</p>
+                        <div class="quote">"Мы есть то, что мы постоянно делаем. Совершенство, следовательно, не действие, а привычка"</div>
+                        <p class="author">- Аристотель</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="gallery-section glassmorphism-area">
+                <h2>Галерея великих мыслителей</h2>
+                <div class="gallery">
+                    <div class="gallery-item glass-card" data-name="Сократ">
+                        <img src="img/socrates.jpg" alt="Сократ">
+                        <div class="philosopher-name">Сократ</div>
+                    </div>
+                    <div class="gallery-item glass-card" data-name="Платон">
+                        <img src="img/plato.jpg" alt="Платон">
+                        <div class="philosopher-name">Платон</div>
+                    </div>
+                    <div class="gallery-item glass-card" data-name="Аристотель">
+                        <img src="img/aristotle.jpg" alt="Аристотель">
+                        <div class="philosopher-name">Аристотель</div>
+                    </div>
+                    <div class="gallery-item glass-card" data-name="Декарт">
+                        <img src="img/descartes.jpg" alt="Декарт">
+                        <div class="philosopher-name">Декарт</div>
+                    </div>
+                    <div class="gallery-item glass-card" data-name="Кант">
+                        <img src="img/kant.jpg" alt="Кант">
+                        <div class="philosopher-name">Кант</div>
+                    </div>
+                    <div class="gallery-item glass-card" data-name="Ницше">
+                        <img src="img/nietzsche.jpg" alt="Ницше">
+                        <div class="philosopher-name">Ницше</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="teachings">
+                <div class="relative-box">
+                    <div class="absolute-element">Новое!</div>
+                    <h2>Философия сегодня</h2>
+                    <p>Современная философия продолжает исследовать фундаментальные вопросы о существовании, знании, ценностях, разуме и языке. Несмотря на технологический прогресс, основные философские проблемы остаются актуальными.</p>
+                    <p>Философские концепции помогают нам осмыслить такие современные вызовы, как искусственный интеллект, биоэтика, экологический кризис и природа сознания.</p>
+                    <div style="text-align: center; margin-top: 25px;">
+                        <a href="modern.html" class="modern-practice-btn">Практика мышления</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="quotes">
+                <div class="flex-section">
+                    <div class="philosophy-card west">
+                        <h2>Западная философия</h2>
+                        <img src="img/western-philosophy.jpg" alt="Западная философия" class="philosophy-image">
+                        <p>Западная философская традиция начинается в Древней Греции и проходит через средневековую схоластику, эпоху Просвещения, немецкий идеализм к современной аналитической и континентальной философии.</p>
+                        <div class="quote">"Мыслю, следовательно, существую"</div>
+                        <p class="author">- Рене Декарт</p>
+                    </div>
+                    <div class="philosophy-card east">
+                        <h2>Восточная философия</h2>
+                        <img src="img/eastern-philosophy.jpg" alt="Восточная философия" class="philosophy-image">
+                        <p>Восточные философские традиции, включая индийскую, китайскую, японскую и персидскую философию, развивались параллельно западной, но с акцентом на гармонию, целостность и духовное просветление.</p>
+                        <div class="quote">"Путь в тысячу ли начинается с первого шага"</div>
+                        <p class="author">- Лао-цзы</p>
+                    </div>
+                    <div class="philosophy-card-extra">
+                        <div class="philosophy-card-extra-content">
+                            <h2>Этика</h2>
+                            <p>Раздел философии, изучающий мораль, добро и зло, обязанности и добродетели. Этика помогает определить, как человек должен действовать.</p>
+                            <div class="quote">"Добродетель есть средоточие между двумя пороками"</div>
+                            <p class="author">- Аристотель</p>
+                        </div>
+                    </div>
+                    <div class="philosophy-card-extra">
+                        <div class="philosophy-card-extra-content">
+                            <h2>Эпистемология</h2>
+                            <p>Теория познания, исследующая природу, границы и критерии знания. Что значит знать что-то? Как мы можем получить знание?</p>
+                            <div class="quote">"Знание есть сила"</div>
+                            <p class="author">- Фрэнсис Бэкон</p>
+                        </div>
+                    </div>
+                    <div class="philosophy-card-extra">
+                        <div class="philosophy-card-extra-content">
+                            <h2>Метафизика</h2>
+                            <p>Область философии, изучающая фундаментальную природу реальности, включая понятия существования, объектов и их свойств, пространства и времени, причинности и возможности.</p>
+                            <div class="quote">"Мир есть мое представление"</div>
+                            <p class="author">- Артур Шопенгауэр</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="iframe-container">
+                <h2>Наше расположение</h2>
+                <iframe class="map-iframe"
+                        src="https://yandex.ru/map-widget/v1/?ll=37.480409%2C55.669986&amp;z=17&amp;pt=37.480409%2C55.669986%2Corg"
+                        title="Карта расположения - Яндекс.Карты"
+                        loading="lazy"
+                        allowfullscreen>
+                </iframe>
+            </section>
+        </div>
+
+        <div class="sticky-sidebar">
+            <h2>Великие философы</h2>
+            <ul>
+                <li>Сократ (470-399 до н.э.)</li>
+                <li>Платон (428-348 до н.э.)</li>
+                <li>Аристотель (384-322 до н.э.)</li>
+                <li>Рене Декарт (1596-1650)</li>
+                <li>Иммануил Кант (1724-1804)</li>
+                <li>Фридрих Ницше (1844-1900)</li>
+                <li>Жан-Поль Сартр (1905-1980)</li>
+            </ul>
+            <h2>Философские школы</h2>
+            <ul>
+                <li class="notification-item">
+                    Наведи сюда
+                    <ul class="notification-list">
+                        <li>Стоицизм</li>
+                        <li>Эпикуреизм</li>
+                        <li>Скептицизм</li>
+                        <li>Неоплатонизм</li>
+                    </ul>
+                </li>
+                <li>Платонизм</li>
+                <li>Аристотелизм</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Философия великих людей.</p>
+        <div class="social-links">
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="ВКонтакте">VK</a>
+                <a href="#" class="social-btn" aria-label="Telegram">TG</a>
+                <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/main-buttons.js"></script>
+</body>
+</html>

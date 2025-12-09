@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="timezone" content="Europe/Moscow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хронология — Философия великих людей</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Φιλοσοφία</a>
+            <input type="checkbox" id="burger" class="burger">
+            <label for="burger" class="burger-label"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+            <label for="burger" class="mobile-nav-overlay"></label>
+            <nav class="mobile-nav">
+                <label for="burger" class="close-btn">×</label>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="philosophers.html">Философы</a></li>
+                    <li><a href="schools.html">Школы</a></li>
+                    <li><a href="concepts.html">Понятия</a></li>
+                    <li><a href="timeline.html">Хронология</a></li>
+                    <li><a href="contact.html">Контакт</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <div class="content-container">
+            <section class="hero">
+                <h1>Хронология философии</h1>
+                <p>Ключевые события, изменившие ход человеческой мысли. Нажмите на любое событие, чтобы узнать подробности.</p>
+            </section>
+
+            <section class="timeline-section">
+                <div class="timeline" id="philosophy-timeline">
+                    
+                </div>
+            </section>
+
+            <div class="show-more-timeline text-center">
+                <button id="show-all-timeline" class="show-more-btn">Показать все события</button>
+            </div>
+        </div>
+
+        <div class="sticky-sidebar">
+            <h2>Эпохи философии</h2>
+            <ul>
+                <li><span class="era-dot antiquity"></span> Античность</li>
+                <li><span class="era-dot medieval"></span> Средневековье</li>
+                <li><span class="era-dot renaissance"></span> Возрождение</li>
+                <li><span class="era-dot modern"></span> Новое время</li>
+                <li><span class="era-dot contemporary"></span> Современность</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Философия великих людей.</p>
+        <div class="social-links">
+            <a href="#" class="social-btn" aria-label="ВКонтакте">VK</a>
+            <a href="#" class="social-btn" aria-label="Telegram">TG</a>
+            <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+        </div>
+    </footer>
+
+    <div id="timeline-modal" class="modal-overlay">
+        <div class="modal-content timeline-modal-content" id="timeline-modal-content">
+            <span class="modal-close timeline-modal-close">&times;</span>
+            <div id="timeline-modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/timeline.js"></script>
+</body>
+</html>
